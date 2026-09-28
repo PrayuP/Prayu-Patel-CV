@@ -1,0 +1,196 @@
+/* General page styling */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2933;
+    background-color: #ffffff;
+}
+
+
+/* Navigation */
+
+header {
+    background-color: #102a43;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Keyboard accessibility */
+
+a:focus {
+    outline: 3px solid #f6c85f;
+    outline-offset: 4px;
+}
+
+
+/* Hero section */
+
+.hero {
+    background-color: #eaf2f8;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    color: #102a43;
+}
+
+.hero h2 {
+    color: #486581;
+    font-weight: normal;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 20px auto 35px;
+    font-size: 1.1rem;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #1769aa;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #102a43;
+}
+
+
+/* Main sections */
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+section h2 {
+    color: #102a43;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+    gap: 40px;
+}
+
+.skills-container article {
+    flex: 1;
+    background-color: #f4f7fa;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+
+/* Projects */
+
+.project {
+    background-color: #f4f7fa;
+    padding: 25px;
+    border-left: 5px solid #1769aa;
+}
+
+
+/* Links */
+
+main a {
+    color: #005ea8;
+}
+
+main a:hover {
+    text-decoration-thickness: 2px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* Mobile design */
+
+@media (max-width: 700px) {
+
+  * nav {
+        flex-direction: col*mn;
+        gap: 15px;
+    }
+
+    *av ul {
+        flex-wrap: wrap;
+ *      justify-content: center;
+   *    gap: 15px;
+    }
+
+    .hero {
+*       padding: 70px 20px;
+    }
+
+*   .hero h1 {
+        font-size: 2*3rem;
+    }
+
+    .skills-container*{
+        flex-direction: column;
+*   }
+}
